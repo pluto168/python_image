@@ -4,7 +4,7 @@ from PIL import Image
 def pickAFile():
     root = Tk()
     root.withdraw()  
-    file_path = filedialog.askopenfilename()  # 打开文件对话框并获取选择的文件路径
+    file_path = filedialog.askopenfilename()
     root.destroy()  
     return file_path
 
