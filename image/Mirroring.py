@@ -21,7 +21,7 @@ def mirrorVertical(image):
         for x in range(mirrorPoint):
             # 取得左側像素的顏色
             leftPixel = image.getpixel((x, y))
-            # 在右側對應位置設定相同的顏色
+            # 在右側對應位置設定相同的顏色,width是總寬度
             image.putpixel((width - x - 1, y), leftPixel)
 
 if __name__ == "__main__":
